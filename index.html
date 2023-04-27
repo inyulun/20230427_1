@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>嗨！我是林毓倫</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+		/>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+        <link rel="stylesheet" href="week11.css">
+ 		<!-- Demo styles -->
+	</head>
+	<body>
+		<!-- Swiper -->
+        <div id="app">
+		<div class="swiper carousel">
+			<div class="swiper-wrapper">
+				<figure class="swiper-slide" v-for="(card,id) in cards">
+					<img src="02.JPG" alt="" />>
+					<figcaption class="swiper-description">
+						
+						<h2>{{card.title}}</h2>
+						<h4>{{card.text}}</h4>
+						<h4>{{card.text2}}</h4>
+					</figcaption>
+                </figure>
+				 <figure class="swiper-slide" v-for="(card,id) in cards">
+					<img src="03.JPG" alt="" />
+					<figcaption class="swiper-description">
+						<h2>{{card.title}}</h2>
+					</figcaption>
+				</figure> 
+				<figure class="swiper-slide" v-for="(card,id) in cards">
+					<img src="04.jpeg" alt="" />
+					<figcaption class="swiper-description">
+						<h2>{{card.title}}</h2>
+						
+					</figcaption>
+					<iframe v-bind:width="card.width" v-bind:height="card.height" v-bind:src="card.link" title="YouTube"></iframe> --> -->
+				</figure>
+				<figure class="swiper-slide" v-for="(card,id) in cards">
+					<img src="05.JPEG" alt="" />
+					<figcaption class="swiper-description">
+						<h2>{{card.title}}</h2>
+						
+					</figcaption>
+					<iframe v-bind:width="card.width" v-bind:height="card.height" v-bind:src="card.link" title="YouTube"></iframe> --> -->
+				</figure>
+				
+			</div>
+			<button type="button" class="swiper-button-next"></button>
+			<button type="button" class="swiper-button-prev"></button>
+			<div class="swiper-pagination"></div>
+		</div>
+    </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.8/vue.min.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<!-- Initialize Swiper -->
+        <script src="week.js"></script>
+	</body>
+</html>
